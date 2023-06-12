@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./introduce.css" />
+  <title>Jeon Hajun</title>
+  <style>
+    *, *::after, *::before {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .title {
+      background-color: #3a86ff;
+      height: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .gnb {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      list-style-type: none;
+      height: 50px;
+      border-bottom: 1px solid #000;
+    } 
+    .navItem {
+      font-size: 20px;
+      color: black;
+    }
+    .navItem:hover {
+      color: aqua;
+    }
+    .main {
+      height: 900px;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+    .introduceTitle {
+      text-align: center;
+      font-size: 50px;
+    }
+    .introduce {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    article {
+      border-radius: 20px;
+      box-shadow: 3px 3px 3px 3px gray;;
+      font-size: 16px;
+      margin: 0 50px;
+    }
+    article ul {
+      width: 300px;
+      height: 200px;
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: flex-start;
+      justify-content: space-around;
+      list-style-type: none;
+      padding: 30px;
+    }
+    .listTitle {
+      font-weight: 600;
+      font-size: 20px;
+    }
+    .footer {
+      height: 200px;
+      width: 100%;
+      font-size: 30px;
+      background-color: #3a86ff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      bottom: 0;
+    }
+    .conclusion {
+      font-size: 125%;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 class="title">
+      Frontend Developer JeonHajun
+    </h1>
+  </header>
+  <main class="main">
+    <h2 class="introduceTitle">About Me</h2>
+    <section class="introduce">
+      <article>
+        <ul>
+          <li class="listTitle">😃 전하준</li>
+          <li>경기도 화성</li>
+          <li>ISFP</li>
+        </ul>
+      </article>
+      <article>
+        <ul>
+          <li class="listTitle">🎤 취미</li>
+          <li>뮤지컬 넘버 듣기</li>
+          <li>웨이트 트레이닝</li>
+          <li>농구</li>
+        </ul>
+      </article>
+      <article>
+        <ul>
+          <li class="listTitle">🏢 가고싶은 회사</li>
+          <li>자체 서비스를 가진 회사</li>
+          <li>내가 성장할 수 있는 회사</li>
+          <li>개발 문화, 분위기가 좋은 회사</li>
+        </ul>
+      </article>
+    </section>
+    <section class="conclusion">
+      <h2>앞으로 잘 부탁드립니다 !</h2>
+      <a href="https://github.com/Majesty-jun">Github</a>
+    </section>
+  </main>
+  <footer class="footer">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+  </footer>
+</body>
+</html>
