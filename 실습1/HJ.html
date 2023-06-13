@@ -11,6 +11,14 @@
       padding: 0;
       box-sizing: border-box;
     }
+    body {
+      height: 100%;
+    }
+    #wrap {
+      min-height: 100%;
+      position: relative;
+      padding-bottom: 200px;
+    }
     .title {
       background-color: #3a86ff;
       height: 100px;
@@ -87,45 +95,47 @@
   </style>
 </head>
 <body>
-  <header>
-    <h1 class="title">
-      Frontend Developer JeonHajun
-    </h1>
-  </header>
-  <main class="main">
-    <h2 class="introduceTitle">About Me</h2>
-    <section class="introduce">
-      <article>
-        <ul>
-          <li class="listTitle">😃 전하준</li>
-          <li>경기도 화성</li>
-          <li>ISFP</li>
-        </ul>
-      </article>
-      <article>
-        <ul>
-          <li class="listTitle">🎤 취미</li>
-          <li>뮤지컬 넘버 듣기</li>
-          <li>웨이트 트레이닝</li>
-          <li>농구</li>
-        </ul>
-      </article>
-      <article>
-        <ul>
-          <li class="listTitle">🏢 가고싶은 회사</li>
-          <li>자체 서비스를 가진 회사</li>
-          <li>내가 성장할 수 있는 회사</li>
-          <li>개발 문화, 분위기가 좋은 회사</li>
-        </ul>
-      </article>
-    </section>
-    <section class="conclusion">
-      <h2>앞으로 잘 부탁드립니다 !</h2>
-      <a href="https://github.com/Majesty-jun">Github</a>
-    </section>
-  </main>
-  <footer class="footer">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-  </footer>
+  <div id="wrap">
+    <header>
+      <h1 class="title">
+        Frontend Developer JeonHajun
+      </h1>
+    </header>
+    <main class="main">
+      <h2 class="introduceTitle">About Me</h2>
+      <section class="introduce">
+        <article>
+          <ul>
+            <li class="listTitle">😃 전하준</li>
+            <li>경기도 화성</li>
+            <li>ISFP</li>
+          </ul>
+        </article>
+        <article>
+          <ul>
+            <li class="listTitle">🎤 취미</li>
+            <li>뮤지컬 넘버 듣기</li>
+            <li>웨이트 트레이닝</li>
+            <li>농구</li>
+          </ul>
+        </article>
+        <article>
+          <ul>
+            <li class="listTitle">🏢 가고싶은 회사</li>
+            <li>자체 서비스를 가진 회사</li>
+            <li>내가 성장할 수 있는 회사</li>
+            <li>개발 문화, 분위기가 좋은 회사</li>
+          </ul>
+        </article>
+      </section>
+      <section class="conclusion">
+        <h2>앞으로 잘 부탁드립니다 !</h2>
+        <a href="https://github.com/Majesty-jun">Github</a>
+      </section>
+    </main>
+    <footer class="footer">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    </footer>
+  </div>
 </body>
 </html>
