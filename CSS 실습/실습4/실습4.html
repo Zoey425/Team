@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/875f8170b8.js" crossorigin="anonymous"></script>
+    <title>css 실습4</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      section {
+        max-width: 64rem;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        gap: 4px;
+      }
+      article {
+        padding: 16px;
+      }
+      .title_container {
+        display: flex;
+        justify-content: space-between;
+      }
+      .title_container h4 {
+        font-size: 1.25rem;
+        font-weight: 700;
+      }
+      .title_container h5 {
+        font-size: 0.75rem;
+      }
+      #class_container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+      }
+      .class_wrapper {
+        width: 320px;
+        height: 368px;
+        border: 1px solid black;
+      }
+      .img_box {
+        height: 40%;
+        position: relative;
+        overflow: hidden;
+      }
+      .img_box img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        filter: brightness(0.75);
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+      .img_box img:hover {
+        filter: brightness(1);
+        transform: scale(1.05);
+      }
+      .class_wrapper h5 {
+        font-weight: 700;
+        font-size: 1.2em;
+      }
+      .class_content {
+        font-size: 0.75rem;
+        line-height: 1rem;
+        color: gray;
+        margin-top: 4px;
+        height: 48px;
+      }
+      .tag_top {
+        color: green;
+        margin-bottom: 8px;
+        display: block;
+        font-size: 0.75rem;
+        font-weight: 700;
+      }
+      .tag_wrapper {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+      .tag_bottom {
+        color: #555;
+        font-weight: 700;
+        font-size: 0.75rem;
+      }
+      .tag_wrapper span {
+        font-size: 0.75rem;
+        line-height: 1rem;
+      }
+      button {
+        width: 100%;
+        border: none;
+        border-radius: 0.5rem;
+        background-color: cornflowerblue;
+        color: #fff;
+        font-size: 0.875rem;
+        font-weight: 500;
+        padding: 8px 0;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="title_container">
+        <h4>교육 과정</h4>
+        <h5>과정 전체보기</h5>
+      </div>
+      <div id="class_container">
+        <div class="class_wrapper">
+          <div class="img_box">
+            <img
+              src="https://sniperfactory.com/api/files/courses/0dqszil3ek971y1/_Hbe76al6xE_JSNHDWvOkq.jpg"
+              alt="image"
+            />
+          </div>
+          <article>
+            <span class="tag_top">신청가능</span>
+            <h5>교육 과정 제목</h5>
+            <p class="class_content">교육 과정 내용</p>
+            <div class="tag_wrapper">
+              <div class="tag_bottom">취업연계과정</div>
+              <span>기수 : 3기 <i class="fa-solid fa-rocket"></i></span>
+            </div>
+            <button>더 알아보기</button>
+          </article>
+        </div>
+        <div class="class_wrapper">
+          <div class="img_box">
+            <img
+              src="https://sniperfactory.com/api/files/courses/0dqszil3ek971y1/_Hbe76al6xE_JSNHDWvOkq.jpg"
+              alt="image"
+            />
+          </div>
+          <article>
+            <span class="tag_top">신청가능</span>
+            <h5>교육 과정 제목</h5>
+            <p class="class_content">교육 과정 내용</p>
+            <div class="tag_wrapper">
+              <div class="tag_bottom">취업연계과정</div>
+              <span>기수 : 3기</span>
+            </div>
+            <button>더 알아보기</button>
+          </article>
+        </div>
+        <div class="class_wrapper">
+          <div class="img_box">
+            <img
+              src="https://sniperfactory.com/api/files/courses/0dqszil3ek971y1/_Hbe76al6xE_JSNHDWvOkq.jpg"
+              alt="image"
+            />
+          </div>
+          <article>
+            <span class="tag_top">신청가능</span>
+            <h5>교육 과정 제목</h5>
+            <p class="class_content">교육 과정 내용</p>
+            <div class="tag_wrapper">
+              <div class="tag_bottom">취업연계과정</div>
+              <span>기수 : 3기</span>
+            </div>
+            <button>더 알아보기</button>
+          </article>
+        </div>
+        <div class="class_wrapper">
+          <div class="img_box">
+            <img
+              src="https://sniperfactory.com/api/files/courses/0dqszil3ek971y1/_Hbe76al6xE_JSNHDWvOkq.jpg"
+              alt="image"
+            />
+          </div>
+          <article>
+            <span class="tag_top">신청가능</span>
+            <h5>교육 과정 제목</h5>
+            <p class="class_content">교육 과정 내용</p>
+            <div class="tag_wrapper">
+              <div class="tag_bottom">취업연계과정</div>
+              <span>기수 : 3기</span>
+            </div>
+            <button>더 알아보기</button>
+          </article>
+        </div>
+        <div class="class_wrapper">
+          <div class="img_box">
+            <img
+              src="https://sniperfactory.com/api/files/courses/0dqszil3ek971y1/_Hbe76al6xE_JSNHDWvOkq.jpg"
+              alt="image"
+            />
+          </div>
+          <article>
+            <span class="tag_top">신청가능</span>
+            <h5>교육 과정 제목</h5>
+            <p class="class_content">교육 과정 내용</p>
+            <div class="tag_wrapper">
+              <div class="tag_bottom">취업연계과정</div>
+              <span>기수 : 3기</span>
+            </div>
+            <button>더 알아보기</button>
+          </article>
+        </div>
+        <div class="class_wrapper">
+          <div class="img_box">
+            <img
+              src="https://sniperfactory.com/api/files/courses/0dqszil3ek971y1/_Hbe76al6xE_JSNHDWvOkq.jpg"
+              alt="image"
+            />
+          </div>
+          <article>
+            <span class="tag_top">신청가능</span>
+            <h5>교육 과정 제목</h5>
+            <p class="class_content">교육 과정 내용</p>
+            <div class="tag_wrapper">
+              <div class="tag_bottom">취업연계과정</div>
+              <span>기수 : 3기</span>
+            </div>
+            <button>더 알아보기</button>
+          </article>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
