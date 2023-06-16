@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>간단한 계산기</title>
+</head>
+
+<body>
+	<header>
+		<h1>뺄셈 계산기</h1>
+	</header>
+	<section id="calculator">
+		<input type="number" id="num1" />
+		<input type="number" id="num2" />
+		<button id="btn">계산</button>
+	</section>
+	<section id="results">
+		<p>결과: <span id="result">0</span></p>
+	</section>
+
+	<script>
+		const num1 = document.getElementById('num1')
+		const num2 = document.getElementById('num2')
+		const result = document.getElementById('result')
+		const btn = document.getElementById('btn');
+
+		function subtract() {
+			const firstNum = parseInt(num1.value)
+			const lastNum = parseInt(num2.value)
+			result.textContent = firstNum - lastNum
+		}
+
+		btn.addEventListener("click", subtract)
+	</script>
+</body>
+
+</html>
