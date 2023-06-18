@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>덧셈계산기</title>
+
+</head>
+
+<body>
+  <h2>덧셈 계산기</h2>
+  <input type="text" id="num1" placeholder="숫자를 입력하세요">
+  <input type="text" id="num2" placeholder="숫자를 입력하세요">
+  <button onclick="add()">덧셈하기</button><br>
+  <p id="result"></p>
+</body>
+
+<script>
+  function add() {
+    let num1 = parseInt(document.getElementById("num1").value);
+    let num2 = parseInt(document.getElementById("num2").value);
+    console.log(num1);
+    console.log(typeof num1);
+    let result = num1 + num2;
+    document.getElementById("result").innerHTML = "결과: " + result;
+  }
+</script>
+</html>

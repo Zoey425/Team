@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>랜덤이미지</title>
+</head>
+<body>
+  <img class="img"></img>
+</body>
+
+  <script>
+
+  const imgs = ["img1.jpeg", "img2.jpeg", "img3.jpeg", "img4.jpeg", "img5.jpeg", "img6.jpeg", "img7.jpeg", "img8.jpeg"];
+  const tgImg = document.querySelector(".img");
+
+    function changeImg() {
+        const randomImg = imgs[Math.floor(Math.random()*imgs.length)];
+        
+        tgImg.src = `../img/${randomImg}`;
+        tgImg.width = 300;
+        tgImg.height = 300;
+
+    }
+
+    setInterval(changeImg, 5000);
+    tgImg.addEventListener("click", changeImg);
+    
+    
+  </script>
+</html>

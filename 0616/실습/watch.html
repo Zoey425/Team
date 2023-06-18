@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>시계</title>
+</head>
+<body>
+  <h2>현재 시간</h2>
+  <h1 id="clock"></h1>
+</body>
+
+<script>
+  const clock = document.getElementById("clock");
+ 
+  function getClock() {
+  const date = new Date();
+  const hours = String(date.getHours()).padStart(2, "0");
+  const mins = String(date.getMinutes()).padStart(2, "0");
+  const sec = String(date.getSeconds()).padStart(2, "0");
+
+  clock.innerText = `${hours}:${mins}:${sec}`;
+    }
+
+    getClock();
+    setInterval(getClock, 1000);
+
+
+</script>
+</html>
