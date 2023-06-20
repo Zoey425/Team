@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>장바구니</title>
+  <style>
+    .product-list {
+      display: flex;
+    }
+
+    div{ 
+      margin-right: 20px;
+      padding: 10px;
+      width: 300px;
+      border: 1px solid #ddd;
+    }
+
+    button{
+      background-color: green;
+      border: 1px solid green;
+      padding: 10px;
+      color: #fff;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <main>
+    <section class="product-list">
+
+      <div class="product">
+        <h3>사과</h3>
+        <p>1000원</p>
+        <button class="add-to-cart">장바구니 추가</button>
+      </div>
+
+      <div class="product">
+        <h3>바나나</h3>
+        <p>1500원</p>
+        <button class="add-to-cart">장바구니 추가</button>
+      </div>
+
+    </section>
+  </main>
+
+    
+   <section class="cart">
+      <h2>장바구니</h2>
+      <ul class="cart-items">
+
+      </ul>
+   </section>
+
+  <script src="script.js"> </script>
+</body>
+</html>

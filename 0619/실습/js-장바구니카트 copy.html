@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>장바구니</title>
+  <style>
+    main {
+      display: flex;
+    }
+
+    div{ 
+      margin-right: 20px;
+      padding: 10px;
+      width: 300px;
+      border: 1px solid #ddd;
+    }
+
+    button{
+      background-color: green;
+      border: 1px solid green;
+      padding: 10px;
+      color: #fff;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <main>
+    <div class="apple">
+      <h3></h3>
+      <p></p>
+      <button id="add-apple">장바구니에 추가</button>
+    </div>
+    <div class="banana">
+      <h3></h3>
+      <p></p>
+      <button id="add-banana">장바구니에 추가</button>
+    </div>
+  </main>
+
+  <h2>장바구니</h2>
+   <section id="result">
+
+   </section>
+
+  <script>
+
+
+    const fruit = ["사과", "바나나"];
+    const cost = [1000, 1500];
+
+    // const apple = "사과";
+    // const banana = "바나나";
+
+    // const appleCost = "1000원";
+    // const bananaCost = "1500원";
+
+    // const apple_tit = document.querySelector(".apple h3");
+    // const banana_tit = document.querySelector(".banana h3");
+
+    // const apple_cost = document.querySelector(".apple p");
+    // const banana_cost = document.querySelector(".banana p");
+
+    const result = document.getElementById("result");
+
+    
+
+
+    // apple_tit.innerText = apple;
+    // banana_tit.innerText = banana;
+
+
+    // apple_cost.innerText = appleCost;
+    // banana_cost.innerText = bananaCost;
+
+    //
+  
+
+    fruit.forEach(element => {
+      console.log(fruit);
+    });
+
+    const btnApple = document.getElementById("add-apple");
+    const btnBanana = document.getElementById("add-banana");
+
+    btnApple.addEventListener('click', addCart);
+    
+    function addCart() {
+     console.log("click");
+    }
+
+  </script>
+</body>
+</html>

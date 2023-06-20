@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>문자열반환</title>
+</head>
+<body>
+  <!-- 문자열로 이루어진 배열이 주어지면, 배열의 요소들을 모두 이어붙인 새로운 문자열을 반환하는 함수를 작성하세요 -->
+
+  <script>
+    const strings = ['Hello', ' ', 'World', '!'];
+    function concateString(arr) {
+      return arr.concat().join("");
+    }
+    console.log(concateString(strings));
+
+
+    let txt = "ABCDEFOWJGTOTJLTJS";
+    document.write(txt.includes("ABc"), "<br>");
+    document.write(txt.startsWith("ABCD"), "<br>");
+    document.write(txt.startsWith("BD"), "<br>");
+    document.write(txt.endsWith("TJS"), "<br>");
+
+
+
+    let score = 68;
+    let money = 0;
+
+    // score = prompt("점수입력해주세요");
+
+    if(score > 90) {
+      document.write("참 잘했습니다. <br>")
+      money+= 10000
+    }else if(score > 80) {
+      document.write("잘했습니다. <br>")
+      money += 5000
+    }else if(score > 70) {
+      document.write("그냥 했습니다. <br>")
+      money += 1000;
+    } else {
+      document.write("더 배우면 됩니다. <br>")
+      money = 0;
+    }
+
+    document.write(money);
+
+
+    let x = 3;
+    x == 4 ? document.write("오케이") : document.write("노우!");
+
+    console.log(new Date().getDay());
+    switch(new Date().getDay()) {
+      case 0:
+        document.write("일요일입니다.");
+        break;
+      case 1:
+        document.write("월요일입니다.");
+        break;
+    }
+
+    for(let i = 2; i<10; i++){
+      for(let j = 1; j<10; j++) {
+        document.write(`${i} x ${j} = ${i*j} <br>`);
+      }
+    }
+
+
+    let arr = [10, 20, 30, 40, 50];
+    arr.forEach((e) => console.log(e*3));
+
+    const numbers = [1,2,3,4,5]
+    const squardNum = numbers.map(
+      function(numbers){
+        return numbers ** 2;
+      }
+    );
+
+    console.log(squardNum)
+
+  </script>
+</body>
+</html>

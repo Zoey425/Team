@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+
+  <script>
+    function sum(x, y, c) {
+      c(x+y);
+      return x+y;
+    }
+
+    function documentWrite(s){
+      document.write('콜백함수', s);
+    }
+
+    sum(10, 20, documentWrite);
+
+    let ey = {
+      name : '박은영',
+      age : 20,
+      height : 167,
+      weight : 50,
+      carrer : {첫번째직장 :"어디", 두번째직장 : "어디", 세번째직장: "어디"},
+    }
+    ey.belong = "세이프홈즈";
+
+    document.write(`제 이름은 ${ey.name}입니다 <br>`);
+    document.write(`제 나이는 ${ey.age}입니다<br><br>`);
+
+
+    let fruit = ["사과", "수박", "복숭아", "딸기", "바나나"];
+    document.write(`과일 : ${fruit} <br>`);
+
+    let pop_fruit = fruit.pop();
+    // pop은 제일 뒤에 것을 뺀다
+    document.write(`과일 pop : ${pop_fruit} <br>`);
+    document.write(`과일 : ${fruit} <br>`);
+
+    document.write(`과일 push : ${fruit.push(pop_fruit)} <br>`);
+    document.write(`과일 : ${fruit} <br>`);
+
+
+    let txt = "fajskfdljaowjdkfljsDFADa";
+    document.write(`${txt} <br>`);
+    document.write(`${txt.indexOf("F")} <br>`);
+    document.write(`${txt.lastIndexOf("f")}`)
+  </script>
+</body>
+</html>

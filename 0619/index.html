@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+    <h1 id="greeting">hello</h1>
+
+    <script>
+      
+      let name = "홍길동"
+      let age = 25;
+
+      age = 40;
+
+      document.write(name);
+      document.write(age);
+
+      console.log(name)
+      console.log(age)
+
+      document.getElementById("greeting").innerText = "Javascript";
+
+      let a = 20;
+      let b = 10;
+      let c = 2;
+
+      document.write("<br />");
+      document.write("a ===", a);
+
+
+      const belong = "udemy x 스나이퍼팩토리";
+      document.write(name, "<br>");
+      document.write(belong, "<br>");
+      document.write(belong[2], "<br>");
+      document.write(belong[3], "<br>");
+
+
+      /////////////////////////////////////////
+
+
+      // let name1 = prompt("이름 입력하세요");
+      // let age1 = prompt("나이 입력하세요");
+
+      // console.log(name1);
+      // console.log(age1);
+
+
+      /////////////////////////////////////////
+
+
+      let x, y, z;
+      x = 5;
+      y = 9;
+      z = 20;
+      y++;
+      x--;
+      --x;
+      ++x;
+      x = x +2;
+      x += 2;
+
+      document.write("x === ", x, "<br>");
+      document.write("y === ", y, "<br>");
+      document.write(`x != z : ${x != 10} <br>`);
+
+      document.write(`false || false : ${false || false} <br>`);
+
+      
+      let a1, b1;
+      a1 = 5;
+      b1 = 210;
+
+      // 3보다 크고 5보다 작으면 a와 b를 더하고 그렇지 않으면 a와 b를 곱하세요.
+      document.write(`a1 < 3 || a1 > 5 : ${ a1 + b1 || a1 * b1} <br>`);
+
+
+      // a가 4이거나 b가 10이면 a와 b를 곱하세요
+      document.write(`a1 === 4 || b1 === 10: ${ a1 * b1} <br>`);
+      
+
+      // a가 4이고, b가 20 둘다 만족하면 a와 b를 곱하고 그렇지 않으면 a와 b를 나눈 나머지를 알려주세요.    
+      document.write(`a1 === 4 && b1 === 20: ${a1 * b1 || a1+b1 }`);
+
+    </script>
+</body>
+</html>
