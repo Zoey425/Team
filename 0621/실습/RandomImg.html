@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://unpkg.com/react@17.0.2/umd/react.production.min.js"></script>
+  <script src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.production.min.js"></script>
+  <!-- babel -->
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <title>이미지</title>
+</head>
+<body>
+  <div id="root"></div>
+  <script type="text/babel">
+    function App() {
+
+      const imgs = [
+        "img/img1.jpeg", 
+        "img/img2.jpeg", 
+        "img/img3.jpeg", 
+        "img/img4.jpeg", 
+        "img/img5.jpeg", 
+        "img/img6.jpeg", 
+        "img/img7.jpeg", 
+        "img/img8.jpeg",
+      ];
+
+     const getRandomImg = () => {
+      const randomIndex = Math.floor(Math.random() * imgs.length);
+      return imgs[randomIndex];
+     };
+
+    return(
+      <div>
+        <h1>랜덤 이미지</h1>
+        <img 
+        src={getRandomImg()} 
+        alt="Random Img" 
+        style={{width:"300px"}} />
+      </div>
+    );
+    
+    }
+
+    ReactDOM.render(<App />, document.getElementById("root"));
+  </script>
+</body>
+</html>

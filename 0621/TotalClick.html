@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Total Click</title>
+  <script src="https://unpkg.com/react@17.0.2/umd/react.production.min.js"></script>
+  <script src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.production.min.js"></script>
+  <!-- babel -->
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+  <div id="root"></div>
+  
+  <script type="text/babel">
+
+    let a = 0;
+    const root = document.getElementById("root");
+    // const h1 = React.createElement("h1", {id: "h1", style:{color:"red"}}, "Total clicks : 0");
+
+    //h1을 다른 방법으로
+    const title = (
+      <h1 id="h1" style={{color:"blue"}}>Total clicks: 0</h1>
+    )
+
+    const btn = React.createElement("button", {
+      onClick:() => {
+        a = a+1;
+        console.log(a);
+        },
+      },
+       "Click me");
+
+      //btn을 다른 방법으로
+      const button = (
+        <button onClick={() => {
+          a = a+1;
+          console.log(a);
+        }}>
+        눌러주세요
+        </button>
+      );
+      
+    const Container = React.createElement("div", null, [title, btn, button]);
+
+    ReactDOM.render(Container, root);
+
+  </script>
+</body>
+</html>
