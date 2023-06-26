@@ -6,6 +6,7 @@ import Practice05 from "component/05";
 import Practice06 from "component/06";
 import TodoApp from "component/TodoList";
 import Login from "component/login";
+import Practice10 from "component/weather";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
 
       <Login />
       <TodoApp />
+      <Practice10 />
     </div>
   );
 }

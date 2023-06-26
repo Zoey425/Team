@@ -5,7 +5,7 @@ function Timer(){
 
   useEffect(() => {
     const timer = setInterval(() => {
-      setCount((count) => count+1)
+      setCount((prevCount) => prevCount+1)
     }, 1000);
 
     return () => {
@@ -14,7 +14,7 @@ function Timer(){
     };
   }, [])
 
-    return <p>{count}</p>
+    return <p>경과시간 : {count}</p>
  
 }
 

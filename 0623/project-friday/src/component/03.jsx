@@ -1,5 +1,9 @@
 import React from "react";
 
+//props.name도 가능
+
+
+//비구조화 할당.
 function Greeting({name}) {
   return(
     <h1>안녕하세요, {name}</h1>
