@@ -18,7 +18,7 @@ const ProfileDate = {
 const Profile = () => {
   const {username} = useParams();
   const navigate = useNavigate();
-    const profile = ProfileDate[username]
+  const profile = ProfileDate[username]
 
   // console.log(useParams());
   // console.log(username);
